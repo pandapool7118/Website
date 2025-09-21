@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/svg+xml" href="assets/Logo_Icon.svg">
+    <title>Yash Jhaveri | Product Designer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+        }
+    </script>
+    <script src="https://unpkg.com/framer-motion@11/dist/framer-motion.js"></script>
+    <link rel="stylesheet" href="theme.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-inter bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <!-- Floating Sidebar Navigation -->
+    <nav class="fixed left-6 top-1/2 transform -translate-y-1/2 z-50 max-lg:left-1/2 max-lg:top-4 max-lg:-translate-x-1/2 max-lg:translate-y-0">
+        <!-- Sidebar Container -->
+        <div class="bg-gray-100 dark:bg-gray-800 rounded-2xl p-3 shadow-lg max-lg:bg-white/90 max-lg:dark:bg-gray-900/90 max-lg:backdrop-blur-md max-lg:rounded-2xl max-lg:px-6 max-lg:py-4 max-lg:shadow-lg max-lg:w-full max-lg:max-w-3xl">
+            <div class="flex flex-col space-y-2 max-lg:flex-row max-lg:space-y-0 max-lg:space-x-6 max-lg:justify-center">
+        <!-- Home Button -->
+                <button class="nav-btn group relative w-12 h-12 max-lg:w-12 max-lg:h-12 rounded-xl bg-transparent shadow-none transition-all duration-200 hover:scale-105 active:scale-95 flex items-center justify-center" data-section="home">
+                    <div class="nav-icon w-6 h-6 text-gray-400 dark:text-gray-500">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M11.47 3.84a.75.75 0 011.06 0l8.69 8.69a.75.75 0 101.06-1.06l-8.689-8.69a2.25 2.25 0 00-3.182 0l-8.69 8.69a.75.75 0 001.061 1.06l8.69-8.69z" />
+                    <path d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 01-.75-.75v-4.5a.75.75 0 00-.75-.75h-3a.75.75 0 00-.75.75V21a.75.75 0 01-.75.75H5.625a1.875 1.875 0 01-1.875-1.875v-6.198a2.29 2.29 0 00.091-.086L12 5.432z" />
+                </svg>
+            </div>
+                    <span class="nav-tooltip absolute left-full ml-3 px-2 py-1 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap shadow-lg max-lg:hidden">Home</span>
+        </button>
+
+        <!-- About Button -->
+                <a href="about.html" class="nav-btn group relative w-12 h-12 max-lg:w-12 max-lg:h-12 rounded-xl bg-transparent shadow-none transition-all duration-200 hover:scale-105 active:scale-95 flex items-center justify-center">
+                    <div class="nav-icon w-6 h-6 text-gray-400 dark:text-gray-500">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                            <path fill-rule="evenodd" d="M11.078 2.25c-.917 0-1.699.663-1.85 1.567L9.05 4.889c-.02.12-.115.26-.297.348a7.493 7.493 0 00-.986.57c-.166.115-.334.126-.45.083L6.3 5.508a1.875 1.875 0 00-2.282.819l-.922 1.597a1.875 1.875 0 00.432 2.385l.84.692c.095.078.17.229.154.43a7.598 7.598 0 000 1.139c.015.2-.059.352-.153.43l-.841.692c-.708.582-.891 1.595-.433 2.385l.922 1.597a1.875 1.875 0 002.282.818l1.019-.382c.115-.043.283-.031.45.082.312.214.641.405.985.57.182.088.277.228.297.35l.178 1.071c.151.904.933 1.567 1.85 1.567h1.844c.916 0 1.699-.663 1.85-1.567l.178-1.072c.02-.12.114-.26.297-.349.344-.165.673-.356.985-.570.167-.114.335-.125.45-.082l1.02.382a1.875 1.875 0 002.28-.819l.923-1.597a1.875 1.875 0 00-.432-2.385l-.84-.692c-.095-.078-.17-.229-.154-.43a7.614 7.614 0 000-1.139c-.016-.2.059-.352.153-.43l.84-.692c.708-.582.892-1.595.433-2.385l-.922-1.597a1.875 1.875 0 00-2.282-.818l-1.02.382c-.114.043-.282.031-.449-.083a7.49 7.49 0 00-.985-.57c-.183-.087-.277-.227-.297-.348L13.928 3.817c-.151-.904-.933-1.567-1.85-1.567h-1.844zM12 15.75a3.75 3.75 0 100-7.5 3.75 3.75 0 000 7.5z" clip-rule="evenodd" />
+                </svg>
+            </div>
+                    <span class="nav-tooltip absolute left-full ml-3 px-2 py-1 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap shadow-lg max-lg:hidden">About</span>
+                </a>
+
+        <!-- Work Button -->
+                <a href="work.html" class="nav-btn group relative w-12 h-12 max-lg:w-12 max-lg:h-12 rounded-xl bg-transparent shadow-none transition-all duration-200 hover:scale-105 active:scale-95 flex items-center justify-center">
+                    <div class="nav-icon w-6 h-6 text-gray-400 dark:text-gray-500">
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M7.5 5.25a3 3 0 013-3h3a3 3 0 013 3v.205c.933.085 1.857.197 2.774.334 1.454.218 2.476 1.483 2.476 2.917v3.033c0 1.211-.734 2.352-1.936 2.752A24.726 24.726 0 0112 15.75c-2.73 0-5.357-.442-7.814-1.259-1.202-.4-1.936-1.541-1.936-2.752V8.706c0-1.434 1.022-2.7 2.476-2.917A48.814 48.814 0 017.5 5.455V5.25zm7.5 0v.09a48.488 48.488 0 00-6 0v-.09a1.5 1.5 0 011.5-1.5h3a1.5 1.5 0 011.5 1.5zm-3 8.25a.75.75 0 100-1.5.75.75 0 000 1.5z" clip-rule="evenodd" />
+                    <path d="M3 18.4v-2.796a4.3 4.3 0 00.713.31A26.226 26.226 0 0012 17.25c2.892 0 5.68-.468 8.287-1.335.252-.084.49-.189.713-.311V18.4c0 1.452-1.047 2.728-2.523 2.923-2.12.282-4.282.427-6.477.427a49.19 49.19 0 01-6.477-.427C4.047 21.128 3 19.852 3 18.4z" />
+                </svg>
+            </div>
+                    <span class="nav-tooltip absolute left-full ml-3 px-2 py-1 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap shadow-lg max-lg:hidden">Work</span>
+                </a>
+
+
+        <!-- Theme Toggle Button -->
+                <button id="theme-toggle" class="theme-toggle-btn group relative w-12 h-12 max-lg:w-12 max-lg:h-12 rounded-xl bg-transparent shadow-none transition-all duration-200 hover:scale-105 active:scale-95 flex items-center justify-center">
+                    <div class="nav-icon w-6 h-6 text-gray-400 dark:text-gray-500">
+                        <svg id="theme-icon" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+                </svg>
+            </div>
+                    <span class="nav-tooltip absolute left-full ml-3 px-2 py-1 bg-white dark:bg-gray-900 text-gray-900 dark:text-white text-xs rounded-md opacity-0 group-hover:opacity-100 transition-opacity duration-200 whitespace-nowrap shadow-lg max-lg:hidden">Theme</span>
+        </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="min-h-screen pt-20 max-lg:pt-24">
+        <!-- Hero Section -->
+        <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-900 dark:bg-gray-900 py-20 px-6">
+            <div class="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-purple-50 bg-[length:400%_400%] animate-gradient-shift dark:hidden"></div>
+            <div class="hero-content relative z-10 text-left max-w-3xl mx-auto">
+                <div class="hero-text mb-8">
+                    <div class="mb-6 animate-fade-in-up">
+                        <img src="assets/logo.svg" alt="Yash Jhaveri Logo" class="w-48 h-48 text-purple-800 dark:text-purple-400">
+                    </div>
+                    <h1 class="text-6xl md:text-8xl font-bold mb-6 text-purple-800 dark:text-purple-400 animate-fade-in-up">
+                        Yash Jhaveri
+                    </h1>
+                    <div class="text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-8">
+                        <span class="inline-block align-middle">I am a&nbsp;</span><span id="typing-text" class="inline-block border-r-2 border-current align-middle pr-0.5"></span>
+                    </div>
+                    <p class="text-lg md:text-xl text-gray-500 dark:text-gray-400 max-w-3xl leading-relaxed animate-fade-in-up-delay">
+                        Welcome to my corner of the web where I share my journey in product design, brand identity, and creative storytelling. Over the past 5+ years, I’ve designed experiences that merge strategy with aesthetics, helping startups, products, and communities grow with clarity and impact.
+                    </p>
+                </div>
+                <div class="hero-actions flex flex-col sm:flex-row gap-4 justify-start items-start animate-fade-in-up-delay-2">
+                    <button class="btn-primary h-12 px-6 bg-purple-800 hover:bg-purple-700 text-white rounded-xl font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg flex items-center justify-center">
+                        View My Work
+                    </button>
+                    <div class="flex gap-3">
+                        <a href="mailto:jhaveriyashraj@gmail.com" class="w-12 h-12 bg-gray-100 dark:bg-gray-700 hover:bg-purple-100 dark:hover:bg-purple-900 text-gray-700 dark:text-gray-300 hover:text-purple-800 dark:hover:text-purple-400 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-105">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                                <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yashjhaveri" class="w-12 h-12 bg-gray-100 dark:bg-gray-700 hover:bg-purple-100 dark:hover:bg-purple-900 text-gray-700 dark:text-gray-300 hover:text-purple-800 dark:hover:text-purple-400 rounded-xl flex items-center justify-center transition-all duration-300 hover:scale-105">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Previous Companies Section -->
+        <section id="ventures" class="py-20 px-6 bg-gray-50 dark:bg-gray-900">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-left mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">Previous Companies</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <!-- Company Card 1 - Stikbook Inc. -->
+                    <a href="https://www.stikbook.com/" target="_blank" class="venture-card group bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-center block">
+                        <div class="venture-icon mb-4 flex justify-center">
+                            <div class="w-20 h-20 bg-white border-2 border-gray-100 dark:border-gray-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <img src="assets/stikbook.svg" alt="Stikbook Inc." class="w-16 h-16">
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2 text-gray-900 dark:text-white">Stikbook Inc.</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Nov 2024 - Present</p>
+                        <p class="text-xs text-gray-400 dark:text-gray-500">Toronto</p>
+                    </a>
+
+                    <!-- Company Card 2 - Fasal Agrotech -->
+                    <a href="https://www.fasal.co/" target="_blank" class="venture-card group bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-center block">
+                        <div class="venture-icon mb-4 flex justify-center">
+                            <div class="w-20 h-20 bg-white border-2 border-gray-100 dark:border-gray-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <img src="assets/fasal.png" alt="Fasal Agrotech" class="w-16 h-16">
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2 text-gray-900 dark:text-white">Fasal Agrotech</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Sep 2021 - Aug 2023</p>
+                        <p class="text-xs text-gray-400 dark:text-gray-500">Bengaluru (Remote)</p>
+                    </a>
+
+                    <!-- Company Card 3 - One Click Production -->
+                    <a href="https://ocpacademy.com/" target="_blank" class="venture-card group bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-center block">
+                        <div class="venture-icon mb-4 flex justify-center">
+                            <div class="w-20 h-20 bg-white border-2 border-gray-100 dark:border-gray-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                                <img src="assets/OCP.png" alt="One Click Production" class="w-16 h-16">
+                            </div>
+                        </div>
+                        <h3 class="text-lg font-bold mb-2 text-gray-900 dark:text-white">One Click Production</h3>
+                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Aug 2019 - July 2021</p>
+                        <p class="text-xs text-gray-400 dark:text-gray-500">Mumbai (Remote)</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Work Section -->
+        <section id="work" class="py-20 px-6 bg-white dark:bg-gray-900">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-left mb-16">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">Featured Work</h2>
+                </div>
+                
+                <div class="space-y-8">
+                    <!-- Work Card 1 - Stikbook -->
+                    <a href="work/stikbook.html" class="work-card group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] p-6 block">
+                        <!-- Image Section -->
+                        <div class="work-image aspect-video rounded-xl mb-4 relative overflow-hidden">
+                            <video autoplay muted loop class="w-full h-full object-cover rounded-xl">
+                                <source src="assets/Stikbook_cover.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                        
+                        <!-- Metadata Row -->
+                        <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
+                            <span>Nov 2024 - Ongoing</span>
+                            <span>•</span>
+                            <span>Social Media</span>
+                            <span>•</span>
+                            <span>Mobile App</span>
+                    </div>
+
+                        <!-- Title -->
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                            Stikbook
+                        </h3>
+                    </a>
+
+                    <!-- Work Card 2 - NexasCart -->
+                    <a href="work/nexascart.html" class="work-card group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] p-6 block">
+                        <!-- Image Section -->
+                        <div class="work-image aspect-video rounded-xl mb-4 relative overflow-hidden">
+                            <img src="assets/Nexascart_cover.png" alt="NexasCart E-commerce Platform" class="w-full h-full object-cover rounded-xl">
+            </div>
+                        
+                        <!-- Metadata Row -->
+                        <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
+                            <span>Jul 2025 - Sep 2025</span>
+                            <span>•</span>
+                            <span>E-commerce</span>
+                            <span>•</span>
+                            <span>Web App</span>
+                </div>
+                
+                        <!-- Title -->
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                            NexasCart
+                            </h3>
+                    </a>
+
+                    <!-- Work Card 3 - Axionity -->
+                    <a href="work/axionity.html" class="work-card group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] p-6 block">
+                        <!-- Image Section -->
+                        <div class="work-image aspect-video rounded-xl mb-4 relative overflow-hidden">
+                            <img src="assets/Axionity_cover.png" alt="Axionity Direct Selling Platform" class="w-full h-full object-cover rounded-xl">
+                            </div>
+                        
+                        <!-- Metadata Row -->
+                        <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
+                            <span>Aug 2025 - Ongoing</span>
+                            <span>•</span>
+                            <span>Direct Selling</span>
+                            <span>•</span>
+                            <span>Web App</span>
+                        </div>
+                
+                        <!-- Title -->
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                            Axionity
+                            </h3>
+                            </a>
+
+                    <!-- Work Card 4 - Reacity -->
+                    <a href="work/reacity.html" class="work-card group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] p-6 block">
+                        <!-- Image Section -->
+                        <div class="work-image aspect-video rounded-xl mb-4 relative overflow-hidden">
+                            <img src="work/assets/Reacity_1.png" alt="Reacity Real Estate Platform" class="w-full h-full object-cover rounded-xl">
+                            </div>
+                        
+                        <!-- Metadata Row -->
+                        <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
+                            <span>Jun 2025 - Jul 2025</span>
+                            <span>•</span>
+                            <span>Real Estate</span>
+                            <span>•</span>
+                            <span>Web App</span>
+                        </div>
+                        
+                        <!-- Title -->
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                            Reacity
+                            </h3>
+                            </a>
+
+                    <!-- Work Card 5 - Mesons -->
+                    <a href="work/mesons.html" class="work-card group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] p-6 block">
+                        <!-- Image Section -->
+                        <div class="work-image aspect-video rounded-xl mb-4 relative overflow-hidden">
+                            <video autoplay muted loop class="w-full h-full object-cover rounded-xl">
+                                <source src="assets/mesons_cover.mp4" type="video/mp4">
+                            </video>
+                            </div>
+                        
+                        <!-- Metadata Row -->
+                        <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
+                            <span>Feb 2025 - Mar 2025</span>
+                            <span>•</span>
+                            <span>Career Website</span>
+                            <span>•</span>
+                            <span>Web Design</span>
+            </div>
+                        
+                        <!-- Title -->
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                            Mesons Technologies
+                            </h3>
+                            </a>
+
+                    <!-- Work Card 6 - Fasal -->
+                    <a href="work/fasal.html" class="work-card group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] p-6 block">
+                        <!-- Image Section -->
+                        <div class="work-image aspect-video rounded-xl mb-4 relative overflow-hidden">
+                            <img src="assets/Fasal_cover.png" alt="Fasal Social Media & Print Design" class="w-full h-full object-cover rounded-xl">
+                </div>
+                        
+                        <!-- Metadata Row -->
+                        <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
+                            <span>Sep 2021 - Aug 2023</span>
+                            <span>•</span>
+                            <span>Brand Design</span>
+                            <span>•</span>
+                            <span>Print & Digital</span>
+            </div>
+                        
+                        <!-- Title -->
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                            Fasal Agrotech
+                        </h3>
+                    </a>
+                            
+                    <!-- Work Card 7 - OCP Academy -->
+                    <a href="work/ocp-academy.html" class="work-card group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] p-6 block">
+                        <!-- Image Section -->
+                        <div class="work-image aspect-video rounded-xl mb-4 relative overflow-hidden">
+                            <img src="assets/OCP_cover.png" alt="OCP Academy Logo Design" class="w-full h-full object-cover rounded-xl">
+                                </div>
+                            
+                        <!-- Metadata Row -->
+                        <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
+                            <span>Aug 2019 - July 2021</span>
+                            <span>•</span>
+                            <span>Logo Design</span>
+                            <span>•</span>
+                            <span>Brand Identity</span>
+                            </div>
+                            
+                        <!-- Title -->
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                            OCP Academy
+                        </h3>
+                    </a>
+
+                    <!-- Work Card 8 - SkillOrbit -->
+                    <a href="work/skillorbit.html" class="work-card group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] p-6 block">
+                        <!-- Image Section -->
+                        <div class="work-image aspect-video rounded-xl mb-4 relative overflow-hidden">
+                            <img src="assets/SkillOrbit_cover.png" alt="SkillOrbit Job Board Website" class="w-full h-full object-cover rounded-xl">
+                            </div>
+                            
+                        <!-- Metadata Row -->
+                        <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
+                            <span>Sep 2025 - Ongoing</span>
+                            <span>•</span>
+                            <span>Job Board</span>
+                            <span>•</span>
+                            <span>Web App</span>
+                    </div>
+                    
+                        <!-- Title -->
+                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                            SkillOrbit
+                        </h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-8 px-6 bg-white dark:bg-gray-900 border-t border-dashed border-gray-300 dark:border-gray-700">
+        <div class="max-w-3xl mx-auto">
+            <div class="flex flex-col sm:flex-row justify-between items-center text-sm text-gray-600 dark:text-gray-400">
+                <p>© 2025 Yash Jhaveri</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
