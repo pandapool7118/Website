@@ -71,13 +71,17 @@ Web App / Job Board — Designed intuitive UX/UI for job search, filters, and li
 ## Explore My Work
 
 Visit my portfolio: https://yashjhaveri.work
+
 Case studies, prototypes, and live project links are included where available
 
 ### Contact Me
+
 Email: jhaveriyashraj@gmail.com
 
 Phone: +1 437-663-5707
+
 LinkedIn: https://linkedin.com/in/yashjhaveri
+
 Portfolio: https://yashjhaveri.work
 
 ## Why I Design
