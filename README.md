@@ -75,6 +75,7 @@ Case studies, prototypes, and live project links are included where available
 
 ### Contact Me
 Email: jhaveriyashraj@gmail.com
+
 Phone: +1 437-663-5707
 LinkedIn: https://linkedin.com/in/yashjhaveri
 Portfolio: https://yashjhaveri.work
