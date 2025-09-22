@@ -1,150 +1,116 @@
-# Sarthak Mishra Portfolio Clone
+Yash Jhaveri — Product Designer
 
-A modern, responsive portfolio website clone featuring stunning animations, smooth interactions, and a fixed vertical sidebar navigation.
+Welcome to my portfolio!
+I’m a product designer with 5+ years of experience creating accessible, data-informed, and brand-consistent visuals across digital and print. I blend creativity with strategy to boost engagement, retention, and visual clarity — helping startups and products grow with impact.
 
-## 🚀 Features
+🧭 What This Portfolio Contains
 
-### ✨ Design & Animations
-- **Stunning Hero Section** with typewriter text animation and floating elements
-- **Smooth Hover Effects** with scaling, color transitions, and micro-interactions
-- **Parallax Scrolling** for immersive visual experience
-- **Gradient Backgrounds** with animated color shifts
-- **Floating Elements** with CSS animations
+A curated showcase of featured projects across apps, branding, and digital experiences
 
-### 🧭 Navigation
-- **Fixed Vertical Sidebar** that stays pinned on scroll
-- **Smooth Hover Styling** with color transitions and scaling effects
-- **Active State Highlighting** with rounded backgrounds
-- **Tooltip System** for better user experience
-- **Mobile-Responsive** with gesture-based interactions
+Highlights of recent and ongoing engagements
 
-### 🎨 Theme System
-- **Global Theme Controller** (Light/Dark mode toggle)
-- **Persistent Theme Storage** using localStorage
-- **Smooth Theme Transitions** with CSS animations
-- **Consistent Theme Application** across all components
+A professional timeline of roles and companies I’ve worked with
 
-### 📱 Mobile Responsiveness
-- **Fully Responsive Design** with Tailwind CSS utilities
-- **Mobile Menu Overlay** with slide-in animation
-- **Touch Gesture Support** for mobile interactions
-- **Optimized Typography** for different screen sizes
+My skills, tools, and contact information
 
-### 🎯 Interactive Elements
-- **Ripple Effects** on button clicks
-- **Card Hover Animations** with lift and scale effects
-- **Smooth Scrolling** between sections
-- **Intersection Observer** for scroll-triggered animations
-- **Keyboard Navigation** support
+💼 Featured Projects
+Stikbook (Nov 2024 – Present)
 
-## 🛠️ Technologies Used
+Mobile App / Social Media — End-to-end product design: UX/UI flows, design system, brand identity, launch video. Boosted landing page engagement by 30%+.
 
-- **HTML5** - Semantic markup structure
-- **CSS3** - Custom animations and responsive design
-- **Vanilla JavaScript** - Interactive functionality
-- **Tailwind CSS** - Utility-first styling framework
-- **Lottie** - Vector animations (ready for integration)
-- **Inter Font** - Modern typography
+Axionity (Aug 2025 – Ongoing)
 
-## 📁 Project Structure
+Web App / Direct Selling — Designed scalable UX/UI flows, branding, and launch visuals. Improved clarity in user purchase flows.
 
-```
-New Website/
-├── index.html          # Main HTML file
-├── styles.css          # Custom CSS animations and styles
-├── script.js           # Interactive JavaScript functionality
-├── README.md           # Project documentation
-└── reference/          # Reference files from original site
-```
+NexasCart (Jul 2025 – Sep 2025)
 
-## 🎨 Key Components
+Web App / E-commerce — Built design system and responsive product flows, reducing developer handoff delays by 25%.
 
-### Sidebar Navigation
-- Home, Settings, Portfolio, Blog, Contact buttons
-- Theme toggle with sun/moon icon animation
-- GitHub button with external link
-- Smooth hover effects and active states
+Reacity (Jun 2025 – Jul 2025)
 
-### Hero Section
-- Animated gradient background
-- Typewriter text effect
-- Floating geometric elements
-- Call-to-action buttons with hover effects
+Web App / Real Estate — Designed browsing, listing, and property detail interfaces with emphasis on information hierarchy.
 
-### Content Sections
-- **Ventures** - Project showcase with hover animations
-- **Featured Work** - Portfolio items with tech stack tags
-- **Recent Posts** - Blog articles with read more links
-- **Newsletter** - Email subscription form
+Mesons Technologies (Feb 2025 – Mar 2025)
 
-### Mobile Features
-- Slide-out navigation menu
-- Touch gesture support
-- Responsive typography scaling
-- Optimized touch targets
+Website — Revamped staffing consultancy’s site and career portal with brand-consistent UX and identity system.
 
-## 🚀 Getting Started
+Fasal Agrotech (Sep 2021 – Aug 2023)
 
-1. **Clone or Download** the project files
-2. **Open `index.html`** in a modern web browser
-3. **Enjoy** the interactive experience!
+Brand Design — Only designer in an agrotech startup. Produced 10+ multilingual campaigns, packaging, and digital assets that boosted adoption by 40% and brand visibility at 100+ events.
 
-No build process required - it's ready to run immediately!
+OCP Academy / One Click Production (Aug 2019 – Jul 2021)
 
-## 🎯 Browser Support
+Logo & Brand Identity — Designed OCP Academy’s logo and 100+ social media creatives. Increased following by 35% in six months.
 
-- Chrome 60+
-- Firefox 60+
-- Safari 12+
-- Edge 79+
+SkillOrbit (Sep 2025 – Ongoing)
 
-## 📱 Mobile Support
+Web App / Job Board — Designed intuitive UX/UI for job search, filters, and listings.
 
-- iOS Safari 12+
-- Chrome Mobile 60+
-- Samsung Internet 8+
-- Firefox Mobile 60+
+🏢 Experience
 
-## 🎨 Customization
+Product Designer — Stikbook & Founder’s Portfolio Companies — Toronto — Nov 2024 to Present
 
-### Colors
-The color scheme can be easily customized by modifying the Tailwind CSS classes in the HTML file.
+Graphic Designer (Marketing & Brand Design) — Fasal Agrotech — Remote (Bengaluru) — Sep 2021 to Aug 2023
 
-### Animations
-Animation timing and effects can be adjusted in `styles.css` by modifying the keyframe definitions.
+Graphic Designer — One Click Production (OCP Academy) — Remote (Mumbai) — Aug 2019 to Jul 2021
 
-### Content
-All text content, project information, and links can be updated directly in `index.html`.
+🎓 Education
 
-## 🔧 Performance Features
+Post-Graduate Diploma in Marketing Management – Digital Media — Lambton College, Toronto — May 2025
 
-- **Throttled Scroll Events** for smooth performance
-- **Intersection Observer** for efficient scroll animations
-- **CSS Transforms** for hardware-accelerated animations
-- **Reduced Motion Support** for accessibility
-- **Lazy Loading Ready** for images
+Bachelor of Computer Applications (BCA) — Jain University, Bengaluru — Jun 2022
 
-## ♿ Accessibility Features
+🔧 Skills
 
-- **Keyboard Navigation** support
-- **Focus States** for all interactive elements
-- **Reduced Motion** media query support
-- **High Contrast** mode compatibility
-- **Screen Reader** friendly markup
+Product & UX Design
 
-## 🎉 Interactive Features
+End-to-end UI/UX: research → wireframes → prototypes → handoff → post-launch feedback
 
-- **Theme Toggle** with smooth transitions
-- **Smooth Scrolling** between sections
-- **Hover Animations** on all interactive elements
-- **Ripple Effects** on button clicks
-- **Parallax Scrolling** for visual depth
-- **Mobile Gestures** for touch devices
+Design systems & component libraries (cut dev handoff time by 25%)
 
-## 📄 License
+Usability testing for web & mobile (React Native, responsive web apps)
 
-This project is created for educational and portfolio purposes. All design elements are inspired by the original Sarthak Mishra portfolio.
+Visual & Brand Design
 
----
+Logo design, brand identity, and vector illustration (5+ company-wide identities)
 
-**Built with ❤️ using modern web technologies**
+Motion graphics & launch videos (boosted landing page engagement by 30%+)
+
+Print, packaging, and multi-language campaigns (10+ languages)
+
+Leadership & Collaboration
+
+Sole design lead across 5 simultaneous ventures
+
+Cross-functional teamwork with global developers, marketers, and stakeholders
+
+Tools
+
+Figma, Adobe XD, Sketch, Spline
+
+Adobe Creative Suite (Illustrator, Photoshop, After Effects, Premiere Pro)
+
+Motion & video: After Effects, Premiere Pro, CapCut
+
+Collaboration: Miro, Notion, Jira, Trello
+
+🚀 Explore My Work
+
+Visit yashjhaveri.work
+ for full case studies and live links
+
+Featured projects include demos, prototypes, and visuals where available
+
+📫 Contact Me
+
+Email: jhaveriyashraj@gmail.com
+
+Phone: +1 437-663-5707
+
+LinkedIn: linkedin.com/in/yashjhaveri
+
+Portfolio: yashjhaveri.work
+
+🙌 Why I Design
+
+Design isn’t just about aesthetics — it’s about solving problems, telling stories, and creating experiences that resonate. My goal is to craft products that feel intuitive, beautiful, and genuinely useful.
