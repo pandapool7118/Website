@@ -11,29 +11,38 @@ I’m a product designer with 5+ years of experience creating accessible, data-i
 - My skills, tools, and contact information
 
 ## Featured Projects
+
+### SkillOrbit (Sep 2025 – Ongoing)
+Web App / Job Board — Designed intuitive UX/UI for job search, filters, and listings.
+[View Thir Website](https://www.skillorbit360.com/)
+
 ### Stikbook (Nov 2024 – Present)
 Mobile App / Social Media — End-to-end product design: UX/UI flows, design system, brand identity, launch video. Boosted landing page engagement by 30%+.
+[View The App](https://www.stikbook.com/download.html)
 
 ### Axionity (Aug 2025 – Ongoing)
 Web App / Direct Selling — Designed scalable UX/UI flows, branding, and launch visuals. Improved clarity in user purchase flows.
+Website In Progress [View StandIn Website](https://www.axionity.com/)
+
+### Mesons Technologies (Feb 2025 – Mar 2025)
+Website — Revamped staffing consultancy’s site and career portal with brand-consistent UX and identity system.
+[View The Website](https://mesonstechnologies.com/)
+
+### Fasal Agrotech (Sep 2021 – Aug 2023)
+Brand Design — Only designer in an agrotech startup. Produced 10+ multilingual campaigns, packaging, and digital assets that boosted adoption by 40% and brand visibility at 100+ events.
+[View Thir Instagram](https://www.instagram.com/fasalapp/)
+
+### OCP Academy / One Click Production (Aug 2019 – Jul 2021)
+Logo & Brand Identity — Designed OCP Academy’s logo and 100+ social media creatives. Increased following by 35% in six months.
+[View Thir Website](https://ocpacademy.com/)
+
+### Under Development
 
 ### NexasCart (Jul 2025 – Sep 2025)
 Web App / E-commerce — Built design system and responsive product flows, reducing developer handoff delays by 25%.
 
 ### Reacity (Jun 2025 – Jul 2025)
 Web App / Real Estate — Designed browsing, listing, and property detail interfaces with emphasis on information hierarchy.
-
-### Mesons Technologies (Feb 2025 – Mar 2025)
-Website — Revamped staffing consultancy’s site and career portal with brand-consistent UX and identity system.
-
-### Fasal Agrotech (Sep 2021 – Aug 2023)
-Brand Design — Only designer in an agrotech startup. Produced 10+ multilingual campaigns, packaging, and digital assets that boosted adoption by 40% and brand visibility at 100+ events.
-
-### OCP Academy / One Click Production (Aug 2019 – Jul 2021)
-Logo & Brand Identity — Designed OCP Academy’s logo and 100+ social media creatives. Increased following by 35% in six months.
-
-### SkillOrbit (Sep 2025 – Ongoing)
-Web App / Job Board — Designed intuitive UX/UI for job search, filters, and listings.
 
 ## Experience
 
