@@ -97,8 +97,6 @@ Phone: +1 437-663-5707
 
 LinkedIn: https://linkedin.com/in/yashjhaveri
 
-Portfolio: https://yashjhaveri.work
-
 ## Why I Design
 Design isn’t just about aesthetics — it’s about solving problems, telling stories, and creating experiences that resonate.
 My goal is to craft products that feel intuitive, beautiful, and genuinely useful.
