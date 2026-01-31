@@ -20,6 +20,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body class="font-inter bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="fixed inset-0 z-[9999] flex items-center justify-center bg-white dark:bg-gray-900 transition-opacity duration-500">
+        <div class="flex flex-col items-center justify-center">
+            <img src="assets/logo.svg" alt="Logo" class="w-40 h-40 animate-pulse">
+        </div>
+    </div>
+
     <!-- Floating Sidebar Navigation -->
     <nav class="fixed left-6 top-1/2 transform -translate-y-1/2 z-50 max-lg:left-1/2 max-lg:top-4 max-lg:-translate-x-1/2 max-lg:translate-y-0">
         <!-- Sidebar Container -->
@@ -110,54 +117,6 @@
             </div>
         </section>
 
-
-        <!-- Previous Companies Section -->
-        <section id="ventures" class="py-20 px-6 bg-gray-50 dark:bg-gray-900">
-            <div class="max-w-3xl mx-auto">
-                <div class="text-left mb-16">
-                    <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">Previous Companies</h2>
-                </div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <!-- Company Card 1 - Stikbook Inc. -->
-                    <a href="https://www.stikbook.com/" target="_blank" class="venture-card group bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-center block">
-                        <div class="venture-icon mb-4 flex justify-center">
-                            <div class="w-20 h-20 bg-white border-2 border-gray-100 dark:border-gray-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                                <img src="assets/stikbook.svg" alt="Stikbook Inc." class="w-16 h-16">
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-bold mb-2 text-gray-900 dark:text-white">Stikbook Inc.</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Nov 2024 - Present</p>
-                        <p class="text-xs text-gray-400 dark:text-gray-500">Toronto</p>
-                    </a>
-
-                    <!-- Company Card 2 - Fasal Agrotech -->
-                    <a href="https://www.fasal.co/" target="_blank" class="venture-card group bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-center block">
-                        <div class="venture-icon mb-4 flex justify-center">
-                            <div class="w-20 h-20 bg-white border-2 border-gray-100 dark:border-gray-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                                <img src="assets/fasal.png" alt="Fasal Agrotech" class="w-16 h-16">
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-bold mb-2 text-gray-900 dark:text-white">Fasal Agrotech</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Sep 2021 - Aug 2023</p>
-                        <p class="text-xs text-gray-400 dark:text-gray-500">Bengaluru (Remote)</p>
-                    </a>
-
-                    <!-- Company Card 3 - One Click Production -->
-                    <a href="https://ocpacademy.com/" target="_blank" class="venture-card group bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 text-center block">
-                        <div class="venture-icon mb-4 flex justify-center">
-                            <div class="w-20 h-20 bg-white border-2 border-gray-100 dark:border-gray-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                                <img src="assets/OCP.png" alt="One Click Production" class="w-16 h-16">
-                            </div>
-                        </div>
-                        <h3 class="text-lg font-bold mb-2 text-gray-900 dark:text-white">One Click Production</h3>
-                        <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Aug 2019 - July 2021</p>
-                        <p class="text-xs text-gray-400 dark:text-gray-500">Mumbai (Remote)</p>
-                    </a>
-                </div>
-            </div>
-        </section>
-
         <!-- Work Section -->
         <section id="work" class="py-20 px-6 bg-white dark:bg-gray-900">
             <div class="max-w-3xl mx-auto">
@@ -166,189 +125,321 @@
                 </div>
                 
                 <div class="space-y-8">
-                    <!-- Work Card 1 - Stikbook -->
-                    <a href="stikbook.html" class="work-card group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] p-6 block">
-                        <!-- Image Section -->
-                        <div class="work-image aspect-video rounded-xl mb-4 relative overflow-hidden">
-                            <video autoplay muted loop class="w-full h-full object-cover rounded-xl">
-                                <source src="assets/Stikbook_cover.mp4" type="video/mp4">
-                            </video>
+                    <!-- Shadcn Card Component - Stikbook -->
+                    <a href="stikbook.html" class="group block">
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+                            <!-- Image Section -->
+                            <div class="aspect-video relative overflow-hidden">
+                                <video autoplay muted loop class="w-full h-full object-cover">
+                                    <source src="assets/Stikbook_cover.mp4" type="video/mp4">
+                                </video>
                             </div>
-                        
-                        <!-- Metadata Row -->
-                        <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
-                            <span>Nov 2024 - Ongoing</span>
-                            <span>•</span>
-                            <span>Social Media</span>
-                            <span>•</span>
-                            <span>Mobile App</span>
-                    </div>
-
-                        <!-- Title -->
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-                            Stikbook
-                        </h3>
-                    </a>
-
-                    <!-- Work Card 2 - NexasCart -->
-                    <a href="nexascart.html" class="work-card group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] p-6 block">
-                        <!-- Image Section -->
-                        <div class="work-image aspect-video rounded-xl mb-4 relative overflow-hidden">
-                            <img src="assets/Nexascart_cover.png" alt="NexasCart E-commerce Platform" class="w-full h-full object-cover rounded-xl">
-            </div>
-                        
-                        <!-- Metadata Row -->
-                        <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
-                            <span>Jul 2024 - Sep 2024</span>
-                            <span>•</span>
-                            <span>E-commerce</span>
-                            <span>•</span>
-                            <span>Web App</span>
-                </div>
-                
-                        <!-- Title -->
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-                            NexasCart
-                            </h3>
-                    </a>
-
-                    <!-- Work Card 3 - Axionity -->
-                    <a href="axionity.html" class="work-card group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] p-6 block">
-                        <!-- Image Section -->
-                        <div class="work-image aspect-video rounded-xl mb-4 relative overflow-hidden">
-                            <img src="assets/Axionity_cover.png" alt="Axionity Direct Selling Platform" class="w-full h-full object-cover rounded-xl">
-                            </div>
-                        
-                        <!-- Metadata Row -->
-                        <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
-                            <span>Aug 2024 - Ongoing</span>
-                            <span>•</span>
-                            <span>Direct Selling</span>
-                            <span>•</span>
-                            <span>Web App</span>
-                        </div>
-                
-                        <!-- Title -->
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-                            Axionity
-                            </h3>
-                            </a>
-
-                    <!-- Work Card 4 - Reacity -->
-                    <a href="reacity.html" class="work-card group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] p-6 block">
-                        <!-- Image Section -->
-                        <div class="work-image aspect-video rounded-xl mb-4 relative overflow-hidden">
-                            <img src="assets/Reacity_1.png" alt="Reacity Real Estate Platform" class="w-full h-full object-cover rounded-xl">
-                            </div>
-                        
-                        <!-- Metadata Row -->
-                        <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
-                            <span>Jun 2024 - Jul 2024</span>
-                            <span>•</span>
-                            <span>Real Estate</span>
-                            <span>•</span>
-                            <span>Web App</span>
-                        </div>
-                        
-                        <!-- Title -->
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-                            Reacity
-                            </h3>
-                            </a>
-
-                    <!-- Work Card 5 - Mesons -->
-                    <a href="mesons.html" class="work-card group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] p-6 block">
-                        <!-- Image Section -->
-                        <div class="work-image aspect-video rounded-xl mb-4 relative overflow-hidden">
-                            <video autoplay muted loop class="w-full h-full object-cover rounded-xl">
-                                <source src="assets/mesons_cover.mp4" type="video/mp4">
-                            </video>
-                            </div>
-                        
-                        <!-- Metadata Row -->
-                        <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
-                            <span>Feb 2024 - Mar 2024</span>
-                            <span>•</span>
-                            <span>Career Website</span>
-                            <span>•</span>
-                            <span>Web Design</span>
-            </div>
-                        
-                        <!-- Title -->
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-                            Mesons Technologies
-                            </h3>
-                            </a>
-
-                    <!-- Work Card 6 - Fasal -->
-                    <a href="fasal.html" class="work-card group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] p-6 block">
-                        <!-- Image Section -->
-                        <div class="work-image aspect-video rounded-xl mb-4 relative overflow-hidden">
-                            <img src="assets/Fasal_cover.png" alt="Fasal Social Media & Print Design" class="w-full h-full object-cover rounded-xl">
-                </div>
-                        
-                        <!-- Metadata Row -->
-                        <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
-                            <span>Sep 2021 - Aug 2023</span>
-                            <span>•</span>
-                            <span>Brand Design</span>
-                            <span>•</span>
-                            <span>Print & Digital</span>
-            </div>
-                        
-                        <!-- Title -->
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-                            Fasal Agrotech
-                        </h3>
-                    </a>
                             
-                    <!-- Work Card 7 - OCP Academy -->
-                    <a href="ocp-academy.html" class="work-card group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] p-6 block">
-                        <!-- Image Section -->
-                        <div class="work-image aspect-video rounded-xl mb-4 relative overflow-hidden">
-                            <img src="assets/OCP_cover.png" alt="OCP Academy Logo Design" class="w-full h-full object-cover rounded-xl">
+                            <!-- Card Content -->
+                            <div class="p-6">
+                                <!-- Metadata Row -->
+                                <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
+                                    <span>Nov 2024 - Ongoing</span>
+                                    <span>•</span>
+                                    <span>Social Media</span>
+                                    <span>•</span>
+                                    <span>Mobile App</span>
                                 </div>
-                            
-                        <!-- Metadata Row -->
-                        <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
-                            <span>Aug 2019 - July 2021</span>
-                            <span>•</span>
-                            <span>Logo Design</span>
-                            <span>•</span>
-                            <span>Brand Identity</span>
+                                
+                                <!-- Title -->
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                                    Stikbook
+                                </h3>
                             </div>
-                            
-                        <!-- Title -->
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-                            OCP Academy
-                        </h3>
+                        </div>
                     </a>
 
-                    <!-- Work Card 8 - SkillOrbit -->
-                    <a href="skillorbit.html" class="work-card group bg-white dark:bg-gray-800 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.02] p-6 block">
-                        <!-- Image Section -->
-                        <div class="work-image aspect-video rounded-xl mb-4 relative overflow-hidden">
-                            <img src="assets/SkillOrbit_cover.png" alt="SkillOrbit Job Board Website" class="w-full h-full object-cover rounded-xl">
+                    <!-- Shadcn Card Component - NexasCart -->
+                    <a href="nexascart.html" class="group block">
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+                            <!-- Image Section -->
+                            <div class="aspect-video relative overflow-hidden">
+                                <img src="assets/Nexascart_cover.png" alt="NexasCart E-commerce Platform" class="w-full h-full object-cover">
                             </div>
                             
-                        <!-- Metadata Row -->
-                        <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
-                            <span>Sep 2024 - Ongoing</span>
-                            <span>•</span>
-                            <span>Job Board</span>
-                            <span>•</span>
-                            <span>Web App</span>
-                    </div>
-                    
-                        <!-- Title -->
-                        <h3 class="text-xl font-bold text-gray-900 dark:text-white">
-                            SkillOrbit
-                        </h3>
+                            <!-- Card Content -->
+                            <div class="p-6">
+                                <!-- Metadata Row -->
+                                <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
+                                    <span>Jul 2024 - Sep 2024</span>
+                                    <span>•</span>
+                                    <span>E-commerce</span>
+                                    <span>•</span>
+                                    <span>Web App</span>
+                                </div>
+                                
+                                <!-- Title -->
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                                    NexasCart
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Shadcn Card Component - Axionity -->
+                    <a href="axionity.html" class="group block">
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+                            <!-- Image Section -->
+                            <div class="aspect-video relative overflow-hidden">
+                                <img src="assets/Axionity_cover.png" alt="Axionity Direct Selling Platform" class="w-full h-full object-cover">
+                            </div>
+                            
+                            <!-- Card Content -->
+                            <div class="p-6">
+                                <!-- Metadata Row -->
+                                <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
+                                    <span>Aug 2024 - Ongoing</span>
+                                    <span>•</span>
+                                    <span>Direct Selling</span>
+                                    <span>•</span>
+                                    <span>Web App</span>
+                                </div>
+                                
+                                <!-- Title -->
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                                    Axionity
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Shadcn Card Component - Reacity -->
+                    <a href="reacity.html" class="group block">
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+                            <!-- Image Section -->
+                            <div class="aspect-video relative overflow-hidden">
+                                <img src="assets/Reacity_1.png" alt="Reacity Real Estate Platform" class="w-full h-full object-cover">
+                            </div>
+                            
+                            <!-- Card Content -->
+                            <div class="p-6">
+                                <!-- Metadata Row -->
+                                <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
+                                    <span>Jun 2024 - Jul 2024</span>
+                                    <span>•</span>
+                                    <span>Real Estate</span>
+                                    <span>•</span>
+                                    <span>Web App</span>
+                                </div>
+                                
+                                <!-- Title -->
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                                    Reacity
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Shadcn Card Component - Mesons -->
+                    <a href="mesons.html" class="group block">
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+                            <!-- Image Section -->
+                            <div class="aspect-video relative overflow-hidden">
+                                <video autoplay muted loop class="w-full h-full object-cover">
+                                    <source src="assets/mesons_cover.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            
+                            <!-- Card Content -->
+                            <div class="p-6">
+                                <!-- Metadata Row -->
+                                <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
+                                    <span>Feb 2024 - Mar 2024</span>
+                                    <span>•</span>
+                                    <span>Career Website</span>
+                                    <span>•</span>
+                                    <span>Web Design</span>
+                                </div>
+                                
+                                <!-- Title -->
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                                    Mesons Technologies
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Shadcn Card Component - Fasal -->
+                    <a href="fasal.html" class="group block">
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+                            <!-- Image Section -->
+                            <div class="aspect-video relative overflow-hidden">
+                                <img src="assets/Fasal_cover.png" alt="Fasal Social Media & Print Design" class="w-full h-full object-cover">
+                            </div>
+                            
+                            <!-- Card Content -->
+                            <div class="p-6">
+                                <!-- Metadata Row -->
+                                <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
+                                    <span>Sep 2021 - Aug 2023</span>
+                                    <span>•</span>
+                                    <span>Brand Design</span>
+                                    <span>•</span>
+                                    <span>Print & Digital</span>
+                                </div>
+                                
+                                <!-- Title -->
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                                    Fasal Agrotech
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+                            
+                    <!-- Shadcn Card Component - OCP Academy -->
+                    <a href="ocp-academy.html" class="group block">
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+                            <!-- Image Section -->
+                            <div class="aspect-video relative overflow-hidden">
+                                <img src="assets/OCP_cover.png" alt="OCP Academy Logo Design" class="w-full h-full object-cover">
+                            </div>
+                            
+                            <!-- Card Content -->
+                            <div class="p-6">
+                                <!-- Metadata Row -->
+                                <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
+                                    <span>Aug 2019 - July 2021</span>
+                                    <span>•</span>
+                                    <span>Logo Design</span>
+                                    <span>•</span>
+                                    <span>Brand Identity</span>
+                                </div>
+                                
+                                <!-- Title -->
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                                    OCP Academy
+                                </h3>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Shadcn Card Component - SkillOrbit -->
+                    <a href="skillorbit.html" class="group block">
+                        <div class="bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-all duration-300 overflow-hidden">
+                            <!-- Image Section -->
+                            <div class="aspect-video relative overflow-hidden">
+                                <img src="assets/SkillOrbit_cover.png" alt="SkillOrbit Job Board Website" class="w-full h-full object-cover">
+                            </div>
+                            
+                            <!-- Card Content -->
+                            <div class="p-6">
+                                <!-- Metadata Row -->
+                                <div class="flex items-center text-gray-500 dark:text-gray-400 mb-3 space-x-2" style="font-size: 12px; line-height: 1.2;">
+                                    <span>Sep 2024 - Ongoing</span>
+                                    <span>•</span>
+                                    <span>Job Board</span>
+                                    <span>•</span>
+                                    <span>Web App</span>
+                                </div>
+                                
+                                <!-- Title -->
+                                <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                                    SkillOrbit
+                                </h3>
+                            </div>
+                        </div>
                     </a>
                 </div>
             </div>
         </section>
 
+<!-- Previous Companies Section -->
+<section id="ventures" class="py-20 px-6 bg-gray-50 dark:bg-gray-900">
+    <div class="max-w-3xl mx-auto">
+        <div class="text-left mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900 dark:text-white">Previous Companies</h2>
+        </div>
+        
+        <!-- Shadcn Item Component - Stikbook Inc. -->
+        <a href="https://www.linkedin.com/company/stikbook" target="_blank" class="group block mb-6">
+            <div class="relative flex items-center gap-4 p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+                <!-- ItemMedia with variant="image" -->
+                <div class="flex-shrink-0">
+                    <div class="w-16 h-16 bg-white border-2 border-gray-100 dark:border-gray-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img src="assets/stikbook.svg" alt="Stikbook Inc." class="w-12 h-12" />
+                    </div>
+                </div>
+                
+                <!-- ItemContent -->
+                <div class="flex-1 min-w-0">
+                    <h3 class="text-lg font-bold mb-1 text-gray-900 dark:text-white">Stikbook Inc.</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Nov 2024 - Present</p>
+                    <p class="text-xs text-gray-400 dark:text-gray-500">Toronto</p>
+                </div>
+                
+                <!-- External Link Icon - Top Right -->
+                <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                    <svg class="w-4 h-4 text-gray-400 dark:text-gray-500 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                </div>
+            </div>
+        </a>
+        
+        <!-- Shadcn Item Component - Fasal Agrotech -->
+        <a href="https://www.linkedin.com/company/fasal" target="_blank" class="group block mb-6">
+            <div class="relative flex items-center gap-4 p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+                <!-- ItemMedia with variant="image" -->
+                <div class="flex-shrink-0">
+                    <div class="w-16 h-16 bg-white border-2 border-gray-100 dark:border-gray-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img src="assets/fasal.png" alt="Fasal Agrotech" class="w-12 h-12" />
+                    </div>
+                </div>
+                
+                <!-- ItemContent -->
+                <div class="flex-1 min-w-0">
+                    <h3 class="text-lg font-bold mb-1 text-gray-900 dark:text-white">Fasal Agrotech</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Sep 2021 - Aug 2023</p>
+                    <p class="text-xs text-gray-400 dark:text-gray-500">Bengaluru (Remote)</p>
+                </div>
+                
+                <!-- External Link Icon - Top Right -->
+                <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                    <svg class="w-4 h-4 text-gray-400 dark:text-gray-500 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                </div>
+            </div>
+        </a>
+        
+        <!-- Shadcn Item Component - One Click Production -->
+        <a href="https://www.linkedin.com/company/ocp-academy" target="_blank" class="group block mb-6">
+            <div class="relative flex items-center gap-4 p-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg shadow-sm hover:shadow-md transition-all duration-300">
+                <!-- ItemMedia with variant="image" -->
+                <div class="flex-shrink-0">
+                    <div class="w-16 h-16 bg-white border-2 border-gray-100 dark:border-gray-800 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                        <img src="assets/OCP.png" alt="One Click Production" class="w-12 h-12" />
+                    </div>
+                </div>
+                
+                <!-- ItemContent -->
+                <div class="flex-1 min-w-0">
+                    <h3 class="text-lg font-bold mb-1 text-gray-900 dark:text-white">One Click Production</h3>
+                    <p class="text-sm text-gray-500 dark:text-gray-400 mb-1">Aug 2019 - July 2021</p>
+                    <p class="text-xs text-gray-400 dark:text-gray-500">Mumbai (Remote)</p>
+                </div>
+                
+                <!-- External Link Icon - Top Right -->
+                <div class="absolute top-2 right-2 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                    <svg class="w-4 h-4 text-gray-400 dark:text-gray-500 group-hover:text-gray-600 dark:group-hover:text-gray-300 transition-colors duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                        <polyline points="15 3 21 3 21 9" />
+                        <line x1="10" y1="14" x2="21" y2="3" />
+                    </svg>
+                </div>
+            </div>
+        </a>
+    </div>
+</section>
 
     </main>
 
@@ -362,6 +453,18 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Splash screen fade out
+        window.addEventListener('load', function() {
+            const splashScreen = document.getElementById('splash-screen');
+            setTimeout(function() {
+                splashScreen.style.opacity = '0';
+                setTimeout(function() {
+                    splashScreen.style.display = 'none';
+                }, 500); // Wait for fade-out animation to complete
+            }, 1500); // Show splash screen for 1.5 seconds
+        });
+    </script>
 </body>
 </html>
 
