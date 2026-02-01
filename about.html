@@ -19,6 +19,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body class="font-inter bg-white dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
+    <!-- Splash Screen -->
+    <div id="splash-screen" class="fixed inset-0 z-[9999] flex items-center justify-center bg-white dark:bg-gray-900 transition-opacity duration-500">
+        <div class="flex flex-col items-center justify-center">
+            <img src="assets/logo.svg" alt="Logo" class="w-40 h-40 animate-pulse">
+        </div>
+    </div>
+
     <!-- Floating Sidebar Navigation -->
     <nav class="fixed left-6 top-1/2 transform -translate-y-1/2 z-50 max-lg:left-1/2 max-lg:top-4 max-lg:-translate-x-1/2 max-lg:translate-y-0">
         <!-- Sidebar Container -->
@@ -119,5 +126,17 @@
     </main>
 
     <script src="script.js"></script>
+    <script>
+        // Splash screen fade out
+        window.addEventListener('load', function() {
+            const splashScreen = document.getElementById('splash-screen');
+            setTimeout(function() {
+                splashScreen.style.opacity = '0';
+                setTimeout(function() {
+                    splashScreen.style.display = 'none';
+                }, 500); // Wait for fade-out animation to complete
+            }, 750); // Show splash screen for 0.75 seconds
+        });
+    </script>
 </body>
 </html>
