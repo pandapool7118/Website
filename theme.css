@@ -86,7 +86,7 @@
 :root {
     --color-primary: #6B21A8;
     --color-primary-hover: #581C87;
-    --color-background: #FFFFFF;
+    --color-background: var(--color-green-700);
     --color-background-alt: #F9FAFB;
     --color-text: #111827;
     --color-text-muted: #4B5563;
@@ -127,6 +127,21 @@ html {
     color: white;
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    /*
+    group relative 
+    w-12 h-12 
+    max-lg:w-12 
+    max-lg:h-12 
+    rounded-xl 
+    bg-transparent 
+    shadow-none 
+    transition-all 
+    duration-200 
+    hover:scale-105 
+    active:scale-95 
+    flex items-center
+    justify-center
+    */
 }
 
 .nav-btn.active .nav-icon {
@@ -150,12 +165,27 @@ html {
     background-color: var(--color-primary);
     color: white;
     transition: all 0.3s;
+    /*
+    h-12 
+    px-6 
+    bg-purple-800 
+    text-white
+    rounded-xl
+    font-semibold
+    transition-all
+    duration-300
+    hover:scale-105
+    hover:shadow-lg 
+    flex items-center
+    justify-center
+    */
 }
 
 .btn-primary:hover {
     background-color: var(--color-primary-hover);
     transform: scale(1.05);
     box-shadow: var(--shadow-lg);
+    hover:bg-purple-700
 }
 
 .btn-secondary {
@@ -190,11 +220,24 @@ input:focus, textarea:focus {
     border: 1px solid var(--color-border);
     box-shadow: var(--shadow);
     transition: all 0.3s;
+    /*
+    bg-white dark:bg-gray-800 
+    border border-gray-200 dark:border-gray-700 
+    text-gray-500 dark:text-gray-400 
+    rounded-lg 
+    shadow-sm 
+    transition-all 
+    duration-300 
+    overflow-hidden
+    */
 }
 
 .card:hover {
     transform: translateY(-4px);
     box-shadow: var(--shadow-lg);
+    /*
+    shadow-md 
+    */
 }
 
 /* Animation Keyframes */
@@ -561,3 +604,4 @@ input:focus, textarea:focus {
         margin-left: 0.25rem !important; /* Further reduced */
     }
 }
+
